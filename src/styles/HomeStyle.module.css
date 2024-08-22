@@ -1,0 +1,88 @@
+.home_body {
+    height: 100vh;
+    background: #f6f5f2;
+}
+
+.upper_part {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.upper_texts {
+    padding: 2rem;
+}
+.upper_texts h1 {
+    font-size: 4rem;
+    color: #222831;
+}
+.upper_texts p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 0.2rem;
+    color: #31363f;
+}
+
+.hiLow_body {
+    background: #b4d6cd;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: 20px 20px 20px 20px;
+}
+.hiLow_body p {
+    font-size: 1.2rem;
+    margin-top: 1.7rem;
+    line-height: 2rem;
+    color: #31363f;
+}
+.hiLow_body img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.loading {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*Desktop home and media query*/
+
+@media screen and (min-width: 1024px) {
+    .HomeContent {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+    }
+    .upper_texts h1 {
+        font-size: 6rem;
+    }
+    .upper_texts p {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .hiLow_body {
+        width: 500px;
+    }
+    .hiLow_body p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+/*Table/Ipad home & media query*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .upper_texts h1 {
+        font-size: 4.5rem;
+    }
+    .upper_texts p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .hiLow_body p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}

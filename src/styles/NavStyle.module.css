@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo_out {
+    display: flex;
+    padding: 0.75rem 1rem;
+    align-items: center;
+    position: absolute;
+}
+.logo_out img {
+    width: 30px;
+    height: 30px;
+    padding: 0.2rem;
+    background: #b4d6cd;
+    border-radius: 4px;
+}
+.out_h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #222831;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 300px;
+    background: #f6f5f2;
+    height: 100%;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.logo_in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+}
+.logo_in img {
+    width: 30px;
+    height: 30px;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    background: #b4d6cd;
+    border-radius: 4px;
+}
+.in_h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #222831;
+}
+.lists {
+    margin-top: 2rem;
+}
+.side_content,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #31363f;
+}
+.side_links {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem 0.75rem 0;
+    margin: 0rem 1.5rem;
+    font-size: 1rem;
+    border-top: solid 1px #000;
+}
+
+.side_footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/*D3sktop nav & media query*/
+
+.big_nav {
+    display: none;
+}
+.nav_bar {
+    display: flex;
+    gap: 4rem;
+}
+.nav_links,
+a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+.msg p {
+    background: #b4d6cd;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.nav_links:hover {
+    color: #b4d6cd;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo_out {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .big_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+}
+
+/*Tablet & Ipad media query*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .sidebar {
+        width: 500px;
+    }
+    .out_h1 {
+        font-size: 2rem;
+    }
+    .list-style img {
+        width: 45px;
+        height: 45px;
+    }
+    .logo_in img {
+        width: 45px;
+        height: 45px;
+    }
+    .in_h1 {
+        font-size: 2rem;
+    }
+    .side_links {
+        font-size: 1.5rem;
+    }
+}
